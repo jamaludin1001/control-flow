@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js control flow</title>
 </head>
+<h1>Konversi Nilai</h1>
 <script>
-    
+    let ulang = true;
+    while(ulang){
     let nilai = prompt("Masukan nilai: ");
-
         if (nilai >= 80 && nilai <= 100) {
-        alert("Nilai anda A");
+        alert("Nilai kamu A");
         } else if (nilai >= 60 && nilai < 80) {
-        alert("Nilai anda B");
+        alert("Nilai kamu B");
         } else if (nilai >= 40 && nilai < 60) {
-        alert("Nilai anda C");
+        alert("Nilai kamu C");
         } else if (nilai >= 20 && nilai < 40) {
-        alert("Nilai anda D");
+        alert("Nilai kamu D");
         } else {
-        alert("Nilai anda E");
+        alert("Nilai kamu E");
         }
-        
+        ulang=confirm("Apakah Kamu Ingin Masuka Nilai Lagi")
+    } 
 </script>
 <body>
 </body>
